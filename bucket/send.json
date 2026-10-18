@@ -1,0 +1,30 @@
+{
+    "version": "0.1.0",
+    "description": "Send messages and files via Telegram, WhatsApp, HTTP, ADB, SSH, and LAN",
+    "homepage": "https://github.com/binbard/send-cli",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/binbard/send-cli/releases/download/v0.1.0/send-0.1.0-windows-amd64.zip",
+            "hash": "15afd97a75ef34bf7cc12a54ab901fee6e3a6bb7ba5aa16c9574964e3cb33ad5"
+        },
+        "arm64": {
+            "url": "https://github.com/binbard/send-cli/releases/download/v0.1.0/send-0.1.0-windows-arm64.zip",
+            "hash": "2d54498a01f71f57a786dc571611e36b4aaf4c559bd7a5387cc5757c30355963"
+        }
+    },
+    "bin": "send.exe",
+    "checkver": {
+        "github": "https://github.com/binbard/send-cli"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/binbard/send-cli/releases/download/v$version/send-$version-windows-amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/binbard/send-cli/releases/download/v$version/send-$version-windows-arm64.zip"
+            }
+        }
+    }
+}
